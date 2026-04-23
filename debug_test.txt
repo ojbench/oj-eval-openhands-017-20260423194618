@@ -1,0 +1,2 @@
+add_user -u admin -p admin123 -n 管理员 -m admin@test.com -g 10
+exit

@@ -1,0 +1,16 @@
+
+
+
+add_user -u admin -p admin123 -n 管理员 -m admin@test.com -g 10
+login -u admin -p admin123
+add_user -c admin -u user1 -p user123 -n 用户一 -m user1@test.com -g 5
+add_train -i G1234 -n 3 -m 1000 -s 北京|上海|杭州 -p 200|150 -x 08:00 -t 120|120 -o 5 -d 06-01|08-31 -y G
+release_train -i G1234
+logout
+login -u user1 -p user123
+buy_ticket -u user1 -i G1234 -d 06-01 -n 2 -f 北京 -t 上海
+query_order -u user1
+query_ticket -s 北京 -t 上海 -d 06-01
+exit
+
+

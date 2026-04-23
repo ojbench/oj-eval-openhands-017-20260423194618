@@ -1,0 +1,7 @@
+
+
+add_user -u admin -p admin123 -n 管理员 -m admin@test.com -g 10
+login -u admin -p admin123
+add_user -c admin -u user1 -p user123 -n 用户一 -m user1@test.com -g 5
+exit
+

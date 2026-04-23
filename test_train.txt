@@ -1,0 +1,9 @@
+
+
+add_user -u admin -p admin123 -n 管理员 -m admin@test.com -g 10
+login -u admin -p admin123
+add_train -i G1234 -n 3 -m 1000 -s 北京|上海|杭州 -p 200|150 -x 08:00 -t 120|120 -o 5 -d 06-01|08-31 -y G
+release_train -i G1234
+query_train -i G1234 -d 06-01
+exit
+
